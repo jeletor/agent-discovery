@@ -1,0 +1,31 @@
+{
+  "name": "agent-discovery",
+  "version": "0.1.0",
+  "description": "Decentralized agent service discovery on Nostr. Find agents by capability, trust, and price.",
+  "main": "lib/index.js",
+  "bin": {
+    "agent-discovery": "bin/agent-discovery.js"
+  },
+  "keywords": [
+    "nostr",
+    "agent",
+    "discovery",
+    "ai",
+    "service",
+    "bitcoin",
+    "lightning",
+    "trust",
+    "wot"
+  ],
+  "author": "Jeletor <jeletor@jeletor.com>",
+  "license": "MIT",
+  "dependencies": {
+    "nostr-tools": "^2.0.0",
+    "ws": "^8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeletor/agent-discovery"
+  },
+  "homepage": "https://github.com/jeletor/agent-discovery#readme"
+}
