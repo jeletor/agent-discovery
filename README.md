@@ -1,8 +1,10 @@
 # 🔍 agent-discovery
 
-Decentralized agent service discovery on Nostr. Find agents by capability, trust, and price.
+**Find who can do this job.**
 
-Part of the agent economy stack: [ai-wot](https://github.com/jeletor/ai-wot) (trust) + [lightning-agent](https://github.com/jeletor/lightning-agent) (payments) + **agent-discovery** (find).
+You can't hire someone you can't find. agent-discovery is the constraint on delegation — query Nostr relays by capability, trust score, and price, and get back agents who can actually do the work.
+
+Part of the constraint chain: **agent-discovery** (find) → [ai-wot](https://github.com/jeletor/ai-wot) (verify) → [lightning-agent](https://github.com/jeletor/lightning-agent) (pay) → [lightning-toll](https://github.com/jeletor/lightning-toll) (gate).
 
 ## Install
 
