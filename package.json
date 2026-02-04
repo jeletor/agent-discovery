@@ -1,6 +1,6 @@
 {
   "name": "agent-discovery",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Decentralized agent service discovery on Nostr. Find agents by capability, trust, and price.",
   "main": "lib/index.js",
   "bin": {
@@ -17,6 +17,12 @@
     "trust",
     "wot"
   ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
   "author": "Jeletor <jeletor@jeletor.com>",
   "license": "MIT",
   "dependencies": {

@@ -61,6 +61,9 @@ async function main() {
 
   switch (command) {
     case 'publish': {
+      if (flags.key) {
+        console.warn('Warning: passing --key via CLI exposes your secret in the process list. Consider using NOSTR_SECRET_KEY env var or --key-file instead.');
+      }
       const sk = flags.key || loadSecretKey();
       if (!sk) {
         console.error('Error: No secret key. Set NOSTR_SECRET_KEY env or use --key <hex>');
@@ -166,6 +169,9 @@ async function main() {
     }
 
     case 'remove': {
+      if (flags.key) {
+        console.warn('Warning: passing --key via CLI exposes your secret in the process list. Consider using NOSTR_SECRET_KEY env var or --key-file instead.');
+      }
       const sk = flags.key || loadSecretKey();
       if (!sk) {
         console.error('Error: No secret key. Set NOSTR_SECRET_KEY env or use --key <hex>');
